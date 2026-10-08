@@ -84,6 +84,31 @@ Designed with modern glassmorphism aesthetics and hardware-accelerated 60fps UI 
 
 ---
 
+## Q-AI Stream Client SDK Integration
+
+Developers integrating directly with Q-Link's streaming infrastructure can utilize the bundled `QAIStreamClient` (`qai-stream-client.js`):
+
+```javascript
+import { QAIStreamClient } from './qai-stream-client.js';
+
+const client = new QAIStreamClient({
+  baseUrl: 'https://q-link-v3-0.vercel.app',
+  maxRetries: 3
+});
+
+// Stream tokens with sub-100ms latency
+await client.streamChat(
+  { prompt: 'Summarize today\'s project milestones.' },
+  {
+    onToken: (chunk) => process.stdout.write(chunk),
+    onComplete: (fullText) => console.log('\nStream completed.'),
+    onError: (err) => console.error('Streaming error:', err)
+  }
+);
+```
+
+---
+
 ## Getting Started
 
 ### Prerequisites
