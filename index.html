@@ -95,7 +95,8 @@
       "Diamond and Sapphire VIP Profile Showcase Cards",
       "Standalone Windows Desktop Client (.exe) with System Tray Mode",
       "Hardware and GPU Performance Switcher (60fps Ultra vs Battery Saver)",
-      "End-to-End Encryption Mode for Private Direct Chats"
+      "End-to-End Encryption Mode for Private Direct Chats",
+      "Q-AI Real-Time Neural Assistant & Low-Latency Streaming Copilot"
     ]
   }
   </script>
@@ -118,7 +119,14 @@
         </div>
       </div>
 
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-4">
+        <a
+          href="#qai"
+          class="hidden sm:inline-flex items-center gap-1.5 text-xs font-medium text-cyan-300/90 hover:text-cyan-200 transition-colors"
+        >
+          <span class="h-1.5 w-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          <span>Q-AI Copilot</span>
+        </a>
         <a
           href="https://q-link-v3-0.vercel.app/llms.txt"
           target="_blank"
@@ -382,6 +390,53 @@
               <p class="font-semibold text-emerald-300 text-xs">Hardware GPU Performance Control</p>
               <p class="text-slate-400 text-[11px] leading-relaxed">
                 Switch between 60fps Ultra High Performance (full glassmorphism effects) and Battery Saver mode.
+              </p>
+            </div>
+        <!-- 5. Q-AI Neural Copilot & Agent Architecture -->
+        <div id="qai" class="p-6 rounded-2xl border border-cyan-500/30 bg-gradient-to-b from-cyan-950/30 via-slate-950/60 to-slate-950/40 backdrop-blur-xl space-y-4 shadow-[0_0_30px_rgba(6,182,212,0.1)]">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-white/5 pb-3 gap-2">
+            <div class="flex items-center gap-2.5">
+              <span class="text-xl">🤖</span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="text-sm font-bold text-white">Q-AI Intelligent Copilot & Neural Architecture</h4>
+                  <span class="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">v3.0 Core</span>
+                </div>
+                <p class="text-xs text-slate-400">Low-latency Server-Sent Events (SSE) streaming and contextual conversation intelligence</p>
+              </div>
+            </div>
+            <span class="inline-flex items-center gap-1.5 text-[11px] font-mono text-emerald-400 bg-emerald-950/40 border border-emerald-500/30 px-2.5 py-1 rounded-lg self-start sm:self-auto">
+              <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              Active Engine
+            </span>
+          </div>
+
+          <div class="grid sm:grid-cols-3 gap-3 pt-1">
+            <div class="p-3.5 rounded-xl bg-black/40 border border-cyan-500/20 space-y-1.5">
+              <div class="flex items-center gap-2 text-cyan-300 text-xs font-semibold">
+                <span>⚡</span>
+                <span>Sub-100ms SSE Stream</span>
+              </div>
+              <p class="text-slate-400 text-[11px] leading-relaxed">
+                Tokens stream incrementally over lightweight HTTP Server-Sent Events, delivering immediate visual response without UI stutter.
+              </p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-black/40 border border-cyan-500/20 space-y-1.5">
+              <div class="flex items-center gap-2 text-indigo-300 text-xs font-semibold">
+                <span>🧠</span>
+                <span>Contextual Thread Memory</span>
+              </div>
+              <p class="text-slate-400 text-[11px] leading-relaxed">
+                Intelligently retains conversation history and channel metadata while enforcing zero persistent cloud leakage for user privacy.
+              </p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-black/40 border border-cyan-500/20 space-y-1.5">
+              <div class="flex items-center gap-2 text-emerald-300 text-xs font-semibold">
+                <span>🛡️</span>
+                <span>Client-Side Guardrails</span>
+              </div>
+              <p class="text-slate-400 text-[11px] leading-relaxed">
+                Equipped with heuristic query filters, automated markdown formatting, and rate-limiting to protect end-user sessions.
               </p>
             </div>
           </div>
